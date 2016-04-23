@@ -1,2 +1,1 @@
-praw==3.4.0
-newspaper3k==0.1.7
+newspaper==0.0.9.8
