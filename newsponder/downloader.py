@@ -115,7 +115,7 @@ class Downloader(object):
 
         # strip out odd characters in the title
         name = unicode(article.title.encode('utf-8'), errors='ignore')
-        name = ''.join(c for c in name if c not in ',.')
+        name = ''.join(c for c in name if c not in ',./')
 
         filename = os.path.join(
             location,
