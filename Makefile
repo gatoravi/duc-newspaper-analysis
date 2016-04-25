@@ -1,5 +1,8 @@
 init:
-	pip install -r requirements-dev.txt --use-mirrors
+	pip install -r requirements-dev.txt
+
+develop:
+	pip install --editable .
 
 install:
 	pip install .
