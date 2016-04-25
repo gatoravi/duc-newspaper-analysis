@@ -9,3 +9,6 @@ install:
 
 test:
 	nosetests -v tests
+
+clean:
+	find newsponder -name "*.pyc" -exec rm -v {} \;
