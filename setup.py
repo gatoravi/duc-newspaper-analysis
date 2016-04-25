@@ -2,17 +2,18 @@
 
 from setuptools import setup, find_packages
 
-version = "0.0.1"
-
 with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
     license = f.read()
 
+with open('newsponder/version.py') as f:
+    exec(f.read())
+
 setup(
     name='duc-newspaper-analysis',
-    version=version,
+    version=__version__,
     description="A newspaper analysis project",
     long_description=readme,
     author='Avi Ramu, Indraniel Das',

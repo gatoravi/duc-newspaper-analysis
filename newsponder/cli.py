@@ -6,10 +6,10 @@ import click
 
 from newsponder.downloader import Downloader
 
-version = "0.0.1"
+from .version import __version__
 
 @click.group()
-@click.version_option(version=version)
+@click.version_option(version=__version__)
 def cli():
     # to make this script/module behave nicely with unix pipes
     # http://newbebweb.blogspot.com/2012/02/python-head-ioerror-errno-32-broken.html
