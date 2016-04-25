@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages
 
-import newsponder.cli
+version = "0.0.1"
 
 with open('README.md') as f:
     readme = f.read()
@@ -12,15 +12,15 @@ with open('LICENSE') as f:
 
 setup(
     name='duc-newspaper-analysis',
-    version=newsponder.cli.version,
+    version=version,
     description="A newspaper analysis project",
     long_description=readme,
     author='Avi Ramu, Indraniel Das',
     author_email='avinash3003@yahoo.co.in, indraniel@gmail.com',
     license=license,
     install_requires=[
-        'newspaper==0.0.9.8',
-        'Click',
+        'newspaper',
+        'click',
     ],
     entry_points='''
         [console_scripts]
