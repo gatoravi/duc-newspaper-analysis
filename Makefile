@@ -1,3 +1,5 @@
+.PHONY: init develop install test clean
+
 init:
 	pip install -r requirements-dev.txt
 
